@@ -1,10 +1,10 @@
 const express = require('express');
-const testController = require('../controllers/rice')
+const riceController = require('../controllers/rice')
 const router = express.Router();
 
 
 
-router.get('/', testController.getUser);
+router.get('/', riceController.getUser);
 
 
 module.exports = router;
