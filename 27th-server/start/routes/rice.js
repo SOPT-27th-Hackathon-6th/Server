@@ -1,10 +1,9 @@
 const express = require('express');
-const riceController = require('../controllers/rice')
+const riceController = require('../controllers/riceController')
 const router = express.Router();
 
-
-
-router.get('/', riceController.getUser);
+router.post('/riceStamp', riceController.createPost);
+router.get('/', riceController.getRice);
 
 
 module.exports = router;
