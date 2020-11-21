@@ -2,7 +2,7 @@ const util = require('../utils/util');
 const responseMessage = require('../utils/responseMessage');
 const statusCode = require('../utils/statusCode');
 const userModel = require('../models/rice');
-const { Mala, Rice } = require('../models');
+const { Mala } = require('../models');
 
 module.exports = {
     // GET: stamp 유무 데이터 받아오기

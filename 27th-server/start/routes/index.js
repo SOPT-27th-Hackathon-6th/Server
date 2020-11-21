@@ -4,6 +4,8 @@ var router = express.Router();
 router.use('/rice', require('./rice'))
 router.use('/mala', require('./mala'))
 router.use('/level', require('./level'))
+router.use('/percent', require('./percent'))
+
 
 router.get("/", function (req, res, next) {
     res.render("index");

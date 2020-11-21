@@ -1,7 +1,7 @@
 const util = require('../utils/util');
 const responseMessage = require('../utils/responseMessage');
 const statusCode = require('../utils/statusCode');
-const userModel = require('../models/rice')
+const userModel = require('../models/rice');
 const { Rice } = require('../models');
 
 module.exports = {    

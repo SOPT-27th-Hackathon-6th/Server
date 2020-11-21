@@ -17,6 +17,8 @@ db.Sequelize = Sequelize;
 db.Mala = require('./mala')(sequelize, Sequelize)
 db.Rice = require('./rice')(sequelize, Sequelize)
 db.Level = require('./level')(sequelize, Sequelize)
+db.Percent = require('./percent')(sequelize, Sequelize)
+
 
 
 
@@ -24,8 +26,5 @@ db.Level = require('./level')(sequelize, Sequelize)
 
 
 /** N: M    User : Post => Like */
-
-
-
 
 module.exports = db;
