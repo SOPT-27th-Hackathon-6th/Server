@@ -1,7 +1,9 @@
 const express = require('express');
-const malaController = require('../controllers/mala')
+const malaController = require('../controllers/malaController')
 const router = express.Router();
 
-router.get('/', malaController.getUser);
+router.post('/malaStamp', malaController.createPost);
+router.get('/', malaController.getMala);
+
 
 module.exports = router;
