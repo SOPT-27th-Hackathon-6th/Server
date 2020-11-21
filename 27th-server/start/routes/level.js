@@ -4,6 +4,6 @@ const router = express.Router();
 
 
 
-router.get('/:foodType/:levelNum', levelController.getLevel)
+router.get('/:foodType', levelController.getLevel)
 
 module.exports = router;
