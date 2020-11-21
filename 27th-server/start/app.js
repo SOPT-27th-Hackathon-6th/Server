@@ -3,6 +3,17 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const {sequelize} = require('./models')
+
+/** false로 하면 테이블 안바뀜 */
+/** table을 아예 수정할때만 true로 바꾼다 */
+sequelize.sync({ alter : false })
+.then(() => {
+  console.log('데이터베이스 연결 성공.');
+})
+.catch((error) => {
+  console.error(error);
+})
 
 var indexRouter = require('./routes/index');
 
