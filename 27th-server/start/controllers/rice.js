@@ -1,9 +1,9 @@
 const util = require('../utils/util');
 const responseMessage = require('../utils/responseMessage');
 const statusCode = require('../utils/statusCode');
-const userModel = require('../models/test')
+const userModel = require('../models/rice')
 
-const testController = {
+const riceController = {
     getUser: async (req, res) => {
         const data = await userModel.getUser();
         
@@ -18,4 +18,4 @@ const testController = {
     },
 }
 
-module.exports = testController;
+module.exports = riceController;
