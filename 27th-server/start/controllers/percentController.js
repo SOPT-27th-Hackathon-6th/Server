@@ -35,6 +35,7 @@ module.exports = {
                   day : dateDiff
                 }
             });
+            console.log(percentData)
 
             return res.status(statusCode.OK).send(util.success(statusCode.OK, "혈중농도 조회 성공", percentData));
 

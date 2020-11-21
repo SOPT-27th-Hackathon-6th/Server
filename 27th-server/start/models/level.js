@@ -13,6 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     foodType: {
         type: DataTypes.INTEGER(),
         allowNUll: true
+    },
+    levelName: {
+        type: DataTypes.STRING(45),
+        allowNull: true
     }
 },  {//모델의 옵션들을 지정하는곳
         freezeTableName: true,

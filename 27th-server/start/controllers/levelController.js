@@ -3,8 +3,6 @@ const responseMessage = require('../utils/responseMessage');
 const statusCode = require('../utils/statusCode');
 const { Level, Mala, Rice } = require('../models');
 
-
-
 module.exports = {
     /**
      *  [GET] /level/:foodType/:levelNum
@@ -19,11 +17,13 @@ module.exports = {
             const riceData = await Rice.findAll()
             const riceDatalength = riceData.length
             var levelNum = riceDatalength / 3
+            var levelNum2 = Math.floor(levelNum)
         } else {
             //마라탕인 경우
             const malaData = await Mala.findAll()
             const malaDatalength = malaData.length
             var levelNum = malaDatalength / 3
+            var levelNum2 = Math.floor(levelNum)
         }
         //const levelNum = Number.parseInt(req.params.levelNum);
         try {
@@ -31,7 +31,7 @@ module.exports = {
             const data = await Level.findAll({
                 where: {
                   foodType: foodType,
-                  levelNum: levelNum
+                  levelNum: levelNum2
                 }
             });
             return res.status(200).send(util.success(200, '레벨 내용 가져오기 성공', data));
