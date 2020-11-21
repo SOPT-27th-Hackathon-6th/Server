@@ -59,6 +59,17 @@ module.exports = db;
 
 
 
+## 개발 환경
+
+- Node.js
+- Express
+- Sequelize ORM
+- MySQL
+- NPM
+- PM2
+
+
+
 ### 팀원
 
 <table>
