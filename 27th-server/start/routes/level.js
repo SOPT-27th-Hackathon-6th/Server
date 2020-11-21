@@ -1,7 +1,7 @@
 const express = require('express');
-const riceController = require('../controllers/riceController')
+const levelController = require('../controllers/levelController')
 const router = express.Router();
 
-//router.get('/', riceController.getUser);
+router.get('/:foodType', levelController.getLevel)
 
 module.exports = router;
